@@ -1,0 +1,7 @@
+def fishstore(fish, price):
+    return ("Fish Type: " + fish.title() + " costs $" + price)
+    
+fish_entry = input("enter fish name: ")
+price_entry = input("enter the fish price (no symbols): ")
+
+print(fishstore(fish_entry,price_entry))
