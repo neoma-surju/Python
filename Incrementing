@@ -1,0 +1,24 @@
+size_s = 0
+size_m = 0
+size_l = 0
+
+while True:
+    size = input('enter a size S,M,L or "exit" (to finish): ')
+    
+    if size.lower().startswith("e"):
+        print()
+        break
+    elif size.lower() == "s": 
+        size_s += 1
+    elif size.lower() == "m":
+        size_m += 1
+    elif size.lower() == "l":
+        size_l += 1
+    else:
+        print("please enter only size S,M,L")
+        break
+    total = (size_s*6) + (size_m*7) + (size_l*8)
+    
+print("Size S qty: ", size_s, "\t"+"sub-total: $"+ str(size_s*6),"\n"+"Size M qty: ", size_m,"\t"+"sub-total: $"+ str(size_m*7), "\n"+"Size L qty: ", size_l,"\t"+"sub-total: $"+ str(size_l*8))
+
+print("Total: $"+str(total))
